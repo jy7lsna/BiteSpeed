@@ -2,7 +2,7 @@
 
 A visual chatbot flow builder built with **React** and **React Flow** for the [BiteSpeed](https://www.bitespeed.co/) Frontend Internship Task.
 
-**Live Demo**: _[Add Vercel deployment link here]_
+**Live Demo**: https://bite-speed-jyolsna-internship-assignment-9emz8rda2.vercel.app
 
 ---
 
@@ -70,7 +70,3 @@ src/
 ```
 
 ---
-
-## Author
-
-**Jyolsna Maria Joemon**
