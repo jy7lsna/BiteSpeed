@@ -1,6 +1,6 @@
 # Chatbot Flow Builder
 
-A visual chatbot flow builder built with **React** and **React Flow** for the [BiteSpeed](https://www.bitespeed.co/) Frontend Internship Task.
+A visual chatbot flow builder built with **React** and **React Flow** 
 
 **Live Demo**: https://bite-speed-jyolsna-internship-assignment-9emz8rda2.vercel.app
 
