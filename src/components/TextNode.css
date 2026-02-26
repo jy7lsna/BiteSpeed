@@ -1,0 +1,63 @@
+/* ==============================
+   TextNode — Custom Chat Node
+   ============================== */
+
+.text-node {
+    min-width: 180px;
+    max-width: 240px;
+    border-radius: var(--radius-md);
+    background: var(--color-node-bg);
+    box-shadow: var(--shadow-node);
+    border: 2px solid transparent;
+    transition: box-shadow var(--transition-normal), border-color var(--transition-normal);
+    overflow: hidden;
+    cursor: grab;
+}
+
+.text-node:hover {
+    box-shadow: var(--shadow-node-hover);
+}
+
+/* Selected state */
+.text-node.selected {
+    border-color: var(--color-node-selected);
+    box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.2), var(--shadow-node-hover);
+}
+
+/* Header bar */
+.text-node__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: var(--color-node-header);
+    color: var(--color-node-header-text);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.text-node__header-icon {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Body with the message text */
+.text-node__body {
+    padding: 10px 12px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--color-text);
+    word-break: break-word;
+    min-height: 32px;
+}
+
+/* Handles styling */
+.text-node .react-flow__handle-top {
+    top: -6px;
+}
+
+.text-node .react-flow__handle-bottom {
+    bottom: -6px;
+}

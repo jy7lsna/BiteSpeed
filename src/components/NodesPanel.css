@@ -1,0 +1,77 @@
+/* ==============================
+   NodesPanel — Draggable Node Types
+   ============================== */
+
+.nodes-panel {
+    padding: 16px;
+}
+
+.nodes-panel__title {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-secondary);
+    margin-bottom: 16px;
+}
+
+.nodes-panel__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Individual draggable node card */
+.node-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    background: var(--color-surface);
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-md);
+    cursor: grab;
+    transition: all var(--transition-fast);
+    user-select: none;
+}
+
+.node-card:hover {
+    border-color: var(--color-primary-light);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+}
+
+.node-card:active {
+    cursor: grabbing;
+    transform: scale(0.97);
+}
+
+.node-card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--radius-sm);
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: #fff;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.node-card__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.node-card__name {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.node-card__desc {
+    font-size: 11px;
+    color: var(--color-text-secondary);
+}

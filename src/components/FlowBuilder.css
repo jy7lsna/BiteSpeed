@@ -1,0 +1,33 @@
+/* ==============================
+   FlowBuilder — Main Canvas Layout
+   ============================== */
+
+.flow-builder {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.flow-builder__main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.flow-builder__canvas {
+    flex: 1;
+    height: 100%;
+    position: relative;
+}
+
+/* Background pattern */
+.flow-builder__canvas .react-flow__background {
+    background-color: var(--color-pane-bg);
+}
+
+/* Drop indicator */
+.flow-builder__canvas.drag-over {
+    outline: 2px dashed var(--color-primary-light);
+    outline-offset: -4px;
+}
